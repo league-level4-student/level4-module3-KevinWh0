@@ -1,7 +1,7 @@
 package _02_gotta_catchem_all;
 
 public class ExceptionMethods {
-	long div(long numb1, long numb2) throws Exception {
+	static long div(long numb1, long numb2) throws Exception {
 		
 		try {
 			return numb1/numb2;
@@ -12,7 +12,7 @@ public class ExceptionMethods {
 		}
 	}
 	
-	String revString(String input) throws Exception {
+	static String revString(String input) throws Exception {
 		
 		if(input.equals("") || input.equals(null)) {
 			throw new Exception();
