@@ -32,6 +32,7 @@ class ExceptionsTest {
 	//3. Complete the JUnit test method to test the divide method.
 	@Test
 	public void testDivideByZeroException() {
+		//assertEquals(ExceptionMethods.div(9, 0), Exception);
 		
 	}
 	
