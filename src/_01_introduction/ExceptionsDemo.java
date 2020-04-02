@@ -34,13 +34,7 @@ public class ExceptionsDemo {
 		}
 		// 3. Create a new class called CustomException that extends Exception.
 		//    Add a void method called terminate that simply calls System.exit(0);
-		class CustomException{
-			
-			
-			void terminate() {
-				System.exit(0);
-			}
-		}
+
 		// 5. Call testMethod2 with a negative number in a try/catch block.
 		//    In the catch block, call the terminate method using the 
 		//    CustomException object.
