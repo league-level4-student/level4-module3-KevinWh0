@@ -2,6 +2,8 @@ package _02_gotta_catchem_all;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import java.net.PasswordAuthentication;
+
 import org.junit.jupiter.api.Test;
 
 
@@ -32,7 +34,14 @@ class ExceptionsTest {
 	//3. Complete the JUnit test method to test the divide method.
 	@Test
 	public void testDivideByZeroException() {
-		//assertEquals(ExceptionMethods.div(9, 0), Exception);
+		try {
+			assertEquals(9/0, ExceptionMethods.div(9, 0));
+			fail("IndexOutOfBoundsException not thrown");
+
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
 	}
 	
@@ -43,7 +52,22 @@ class ExceptionsTest {
 	//5. Complete the JUnit test method to test the reverseStringMethod.
 	@Test
 	public void testReverseString() {
-		
+		try {
+			assertEquals("", ExceptionMethods.revString(""));
+			fail("not thrown");
+
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		try {
+			assertEquals(9/0, ExceptionMethods.revString(null));
+			fail("not thrown");
+
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 	
 	
